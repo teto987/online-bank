@@ -1,0 +1,34 @@
+#include <stdio.h>
+#define add(num1,num2) (num1+num2)
+#define sub(num1,num2) (num1-num2)
+#define mul(num1,num2) (num1*num2)
+#define dev(num1,num2) (num1/num2)
+#define and(num1,num2) (num1&num2)
+#define ori(num1,num2) (num1|num2)
+#define remi(num1,num2) (num1%num2)
+#define xor(num1,num2) (num1^num2)
+#define Not(num1) (!num1)
+#define incre(num1) (++num1)
+#define decre(num1) (--num1)
+int main() {
+    int x=0; int No1=0,No2=0;
+     printf("specify the operation:");
+    scanf("%i",&x);
+    printf("enter the two operand:");
+    scanf("%i%i",&No1,&No2);
+    switch(x){
+   case 1: printf("add=%i\n",add(No1,No2)); break;
+   case 2: printf("sub=%i\n",sub(No1,No2)); break;
+   case 3: printf("mul=%i\n",mul(No1,No2)); break;
+   case 4: printf("dev=%i\n",dev(No1,No2)); break;
+   case 5: printf("and=%i\n",and(No1,No2)); break;
+   case 6: printf("ori=%i\n",ori(No1,No2)); break;
+   case 7: printf("remi=%i\n",remi(No1,No2)); break;
+   case 8: printf("xor=%i\n",xor(No1,No2)); break;
+   case 9: printf("Not=%i\n",Not(No1)); break;
+   case 10: printf("incre%i\n",incre(No1)); break;
+   default: printf("decre%i\n",decre(No1)); break;
+    }
+    
+    return 0;
+}
